@@ -6,7 +6,7 @@
     using System.Linq;
     using System.Threading.Tasks;
 
-    public class Product
+    public class Product : IEntities
     {
         public int Id { get; set; }
 
