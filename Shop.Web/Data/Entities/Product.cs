@@ -26,10 +26,12 @@
         [Display(Name = "Last Sale")]
         public DateTime? LastSale { get; set; }
 
+        [Display(Name = "Is avaible?")]
+        public bool IsAvaible { get; set; }
+
         [DisplayFormat(DataFormatString = "{0:N2}", ApplyFormatInEditMode = false)]
         public double Stock { get; set; }
 
-        [Display(Name = "Is avaible?")]
-        public bool IsAvaible { get; set; }
+        public User User { get; set; }
     }
 }
