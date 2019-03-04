@@ -45,8 +45,8 @@
             services.AddTransient<SeedDb>();
 
             //Queda más tiempo en la memoria hasta que pase el GC.
-            services.AddScoped<IRepository, Repository>();
-
+            services.AddScoped<IProductRepository, ProductRepository>();
+            services.AddScoped<ICountryRepository, CountryRepository>();
             services.AddScoped<IUserHelper, UserHelper>();
 
             services.Configure<CookiePolicyOptions>(options =>

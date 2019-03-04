@@ -10,6 +10,7 @@
 
         public DbSet<Product> Products { get; set; }
 
+        public DbSet<Country> Countries { get; set; }
         #endregion
 
         #region Constructors
