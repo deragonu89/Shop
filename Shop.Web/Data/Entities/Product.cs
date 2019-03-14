@@ -33,5 +33,17 @@
         public double Stock { get; set; }
 
         public User User { get; set; }
+
+        public string ImageFullPath {
+            get
+            {
+                if (string.IsNullOrEmpty(this.ImagenUrl))
+                {
+                    return null;
+                }
+
+                return $"https://shopderagonu89.azurewebsites.net{this.ImagenUrl.Substring(1)}";
+            }
+        }
     }
 }
